@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/static-build"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "server.js"
+      }
+    ],
+    "env": {
+      "MongoURI": "mongodb+srv://lovelyt7989:R739oBm0XgfJPhpz@cluster1.phqmskp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1",
+      "JWT_SECRET": "your-jwt-secret-key"
+    }
+  }
